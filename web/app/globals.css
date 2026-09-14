@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Lumo Design System — fonte única de cores para o Web */
+  --lumo-ink-deep: #031F1A;
+  --lumo-ink: #062B24;
+  --lumo-ink-soft: #0B3A31;
+
+  --lumo-turquoise: #20E3A2;
+  --lumo-mint: #6EF2C2;
+  --lumo-lime: #8BFF6A;
+
+  --lumo-background: #F4FBF8;
+  --lumo-surface: #FFFFFF;
+  --lumo-surface-soft: #EAF7F2;
+  --lumo-border: #D9E8E2;
+
+  --lumo-text: #062B24;
+  --lumo-text-muted: #61736D;
+
+  --lumo-success: #16A36A;
+  --lumo-warning: #F59E0B;
+  --lumo-danger: #DC3C4D;
+  --lumo-info: #0EA5A8;
+
+  --lumo-ai: #18C7A3;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--lumo-turquoise) 24%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--lumo-turquoise);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: color-mix(in srgb, var(--lumo-text-muted) 30%, transparent);
+    border-radius: 999px;
+  }
+}

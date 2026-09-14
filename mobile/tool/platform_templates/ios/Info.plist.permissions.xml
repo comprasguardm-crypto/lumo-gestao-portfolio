@@ -1,0 +1,5 @@
+<!-- Adicione dentro de <dict>: -->
+<key>NSCameraUsageDescription</key>
+<string>O Lumo usa a câmera frontal para registrar a selfie da marcação de ponto.</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>O Lumo usa sua localização durante a marcação de ponto para validar o local autorizado pela empresa.</string>

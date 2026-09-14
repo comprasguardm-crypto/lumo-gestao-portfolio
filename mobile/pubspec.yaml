@@ -1,0 +1,38 @@
+name: lumo_gestao_mobile
+description: App do colaborador da Lumo Gestão — ponto, férias, documentos e perfil.
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Estado e navegação
+  provider: ^6.1.2
+
+  # Ponto pelo app: câmera e geolocalização
+  camera: ^0.10.6
+  geolocator: ^12.0.0
+  permission_handler: ^11.3.1
+
+  # Utilidades
+  intl: ^0.19.0
+  fl_chart: ^0.68.0
+  shared_preferences: ^2.2.3
+  http: ^1.2.2
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - shorebird.yaml
